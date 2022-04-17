@@ -9,6 +9,7 @@ import HomePage from "./pages/HomePage";
 import CategoryPage from "./pages/CategoryPage";
 import ProductPage from "./pages/ProductPage";
 import MenuPage from "./pages/MenuPage";
+import AdminPage from "./pages/AdminPage";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/*" element={<Navigate replace to="/" />} />
+        <Route path="admin" element={<AdminPage />} />
         <Route path="menu" element={<MenuPage />} />
         <Route path="menu/:course/:category" element={<CategoryPage />} />
         <Route
