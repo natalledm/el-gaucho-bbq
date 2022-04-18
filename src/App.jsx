@@ -1,3 +1,4 @@
+// packages
 import {
   BrowserRouter as Router,
   Routes,
@@ -5,6 +6,7 @@ import {
   Navigate,
 } from "react-router-dom";
 
+// components
 import HomePage from "./pages/HomePage";
 import CategoryPage from "./pages/CategoryPage";
 import ProductPage from "./pages/ProductPage";
@@ -19,11 +21,8 @@ export default function App() {
         <Route path="/*" element={<Navigate replace to="/" />} />
         <Route path="admin" element={<AdminPage />} />
         <Route path="menu" element={<MenuPage />} />
-        <Route path="menu/:course/:category" element={<CategoryPage />} />
-        <Route
-          path="menu/:course/:category/:productId"
-          element={<ProductPage />}
-        />
+        <Route path="menu/:category" element={<CategoryPage />} />
+        <Route path="menu/:category/:productId" element={<ProductPage />} />
       </Routes>
     </Router>
   );

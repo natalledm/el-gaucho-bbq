@@ -1,5 +1,5 @@
 // packages
-import { collection, getDocs } from "firebase/firestore";
+import { collection, doc, getDoc, getDocs } from "firebase/firestore";
 
 // project file
 import { fireStoreDB } from "./connectToFirebase";
@@ -12,4 +12,11 @@ export async function getCollection(path) {
   });
 
   return documents;
+}
+
+export async function getDocument(path, docId) {
+  const documentPath = doc(fireStoreDB, path, docId);
+  const document = await getDoc(documentPath);
+
+  return document.data();
 }
