@@ -20,7 +20,7 @@ export default function CategoryPage() {
   const dishesElements = dishes.map((item) => {
     return (
       <li key={item.id}>
-        <Link to={`/menu/${category}/${item.name}`}>{item.name}</Link>
+        <Link to={`/menu/${category}/${item.id}`}>{item.name}</Link>
       </li>
     );
   });
