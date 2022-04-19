@@ -13,6 +13,8 @@ import ProductPage from "./pages/ProductPage";
 import MenuPage from "./pages/MenuPage";
 import AdminPage from "./pages/AdminPage";
 
+import "./styles/base.css";
+
 export default function App() {
   return (
     <Router>

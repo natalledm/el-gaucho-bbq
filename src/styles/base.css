@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Fira+Sans&display=swap");
+
+:root {
+  --dark-coal: #19131b;
+  --accent-dark-red: #9c2505;
+  --hover-dark-red: #641905;
+  --soft-white: #ebeffa;
+  --pure-white: #fff;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  background-color: var(--soft-blue);
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1.6rem;
+  box-sizing: border-box;
+  min-height: 100%;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  object-fit: cover;
+}
+
+/* Typography */
+
+h1,
+h2,
+h3 {
+  font-family: "Alfa Slab One", cursive;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+p,
+a,
+label {
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* Main button */
+
+.main-button {
+  width: 200px;
+  line-height: 44px;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  background-color: var(--accent-dark-red);
+  color: var(--soft-white);
+  cursor: pointer;
+}
+
+.main-button:hover {
+  background-color: var(--hover-dark-red);
+}
+
+/* General layout organization */
+
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  p,
+  a,
+  label {
+    font-size: 1.8rem;
+  }
+}
