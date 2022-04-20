@@ -1,0 +1,27 @@
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60rem;
+  max-width: 60%;
+  margin: 10% 20%;
+}
+
+.content-container section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5rem;
+  justify-content: space-between;
+}
+
+.content-container p {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.main-button {
+  background-color: var(--accent-dark-red);
+  text-align: center;
+  max-width: 245px;
+}

@@ -71,10 +71,9 @@ ol {
 /* Main button */
 
 .main-button {
-  width: 200px;
+  width: 100%;
   line-height: 44px;
   border: none;
-  border-radius: 30px;
   text-decoration: none;
   background-color: var(--accent-dark-red);
   color: var(--soft-white);

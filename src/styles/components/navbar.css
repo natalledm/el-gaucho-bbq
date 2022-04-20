@@ -2,7 +2,6 @@
   background-color: var(--dark-coal);
   color: var(--soft-white);
   max-width: 100%;
-  height: 6vh;
 }
 
 .navbar-content {
@@ -14,8 +13,7 @@
   padding: 0.5rem;
 }
 
-.logo-title-container,
-a {
+.logo-title-container a {
   display: flex;
   flex-direction: row;
   align-items: center;
