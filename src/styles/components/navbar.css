@@ -2,6 +2,7 @@
   background-color: var(--dark-coal);
   color: var(--soft-white);
   max-width: 100%;
+  height: 6vh;
 }
 
 .navbar-content {
@@ -19,6 +20,7 @@ a {
   flex-direction: row;
   align-items: center;
   gap: 5px;
+  padding-bottom: 0.5rem;
 }
 
 .title {
@@ -28,6 +30,7 @@ a {
 
 .title span {
   display: block;
+  line-height: 22px;
 }
 
 .list {

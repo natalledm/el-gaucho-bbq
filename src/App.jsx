@@ -14,12 +14,15 @@ import MenuPage from "./pages/MenuPage";
 import AdminPage from "./pages/AdminPage";
 import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage";
+import Navbar from "./components/Navbar";
 
 import "./styles/base.css";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
     <Router>
+      <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/*" element={<Navigate replace to="/" />} />
@@ -30,6 +33,7 @@ export default function App() {
         <Route path="menu/:category" element={<CategoryPage />} />
         <Route path="menu/:category/:productId" element={<ProductPage />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
