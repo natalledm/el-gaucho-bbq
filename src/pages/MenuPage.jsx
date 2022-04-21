@@ -22,8 +22,6 @@ export default function MenuPage() {
     loadData("menu");
   }, []);
 
-  console.log("menu", menu);
-
   if (status === 0) return <p>Loading...</p>;
   if (status === 2) return <p>Error!</p>;
 

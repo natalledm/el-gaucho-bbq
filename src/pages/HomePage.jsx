@@ -9,9 +9,10 @@ export default function HomePage() {
       <div>
         <Header bgImg={bgImg} title={"Welcome to El Gaucho"} />
       </div>
-      <div className="content-container">
+      <div className="home-content-container">
         <section>
-          <h2>Welcome to El Gaucho!</h2>
+          <h2>Welcome </h2>
+          <h2>to</h2> <h2>El Gaucho!</h2>
           <p>
             This is the restaurant made for meat lovers. Here you can be sure
             that you will taste meat done with expertise and excellency, with
