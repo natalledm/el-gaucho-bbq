@@ -75,6 +75,7 @@ ol {
   line-height: 44px;
   border: none;
   text-decoration: none;
+  font-size: 1.6rem;
   background-color: var(--accent-dark-red);
   color: var(--soft-white);
   cursor: pointer;
