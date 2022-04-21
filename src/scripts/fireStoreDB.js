@@ -18,5 +18,8 @@ export async function getDocument(path, docId) {
   const documentPath = doc(fireStoreDB, path, docId);
   const document = await getDoc(documentPath);
 
-  return document.data();
+  return {
+    id: document.id,
+    ...document.data(),
+  };
 }

@@ -1,13 +1,14 @@
-.content-container {
+.home-content-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 60rem;
   max-width: 60%;
   margin: 5% 20%;
+  text-align: center;
 }
 
-.content-container section {
+.home-content-container section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,7 +16,7 @@
   justify-content: space-between;
 }
 
-.content-container p {
+.home-content-container p {
   padding: 2rem 0;
   text-align: center;
 }
@@ -27,11 +28,11 @@
 }
 
 @media (min-width: 600px) {
-  .content-container {
+  .home-content-container {
     margin: 5% 35%;
   }
 
-  .content-container section {
+  .home-content-container section {
     padding-bottom: 8rem;
   }
 }

@@ -45,11 +45,11 @@ h3 {
 }
 
 h1 {
-  font-size: 2.4rem;
+  font-size: 4rem;
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 3rem;
 }
 
 p,
@@ -96,11 +96,11 @@ ol {
 
 @media (min-width: 600px) {
   h1 {
-    font-size: 3rem;
+    font-size: 6rem;
   }
 
   h2 {
-    font-size: 2.4rem;
+    font-size: 5rem;
   }
 
   p,
