@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 60rem;
+  min-height: 60rem;
   max-width: 60%;
-  margin: 10% 20%;
+  margin: 5% 20%;
 }
 
 .content-container section {
@@ -24,4 +24,14 @@
   background-color: var(--accent-dark-red);
   text-align: center;
   max-width: 245px;
+}
+
+@media (min-width: 600px) {
+  .content-container {
+    margin: 5% 35%;
+  }
+
+  .content-container section {
+    padding-bottom: 8rem;
+  }
 }
