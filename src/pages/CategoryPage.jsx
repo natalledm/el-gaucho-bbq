@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
+import Header from "../components/Header";
 
 // script
 import { getCollection } from "../scripts/fireStoreDB";
@@ -25,10 +26,14 @@ export default function CategoryPage() {
     );
   });
 
+  console.log(category);
+
   return (
     <div>
-      <h1>{category}</h1>
-      <ul>{dishesElements}</ul>
+      <Header bgImg={category.imageUrl} title={category} />
+      <div>
+        <ul>{dishesElements}</ul>
+      </div>
     </div>
   );
 }

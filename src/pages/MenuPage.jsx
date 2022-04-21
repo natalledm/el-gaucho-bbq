@@ -34,7 +34,11 @@ export default function MenuPage() {
       </div>
       <div className="menu-content-container">
         <ul className="category-container">
-          <CategoryCard menu={menu} />
+          {menu.map((category) => (
+            <li key={category.id}>
+              <CategoryCard category={category} />
+            </li>
+          ))}
         </ul>
       </div>
     </div>

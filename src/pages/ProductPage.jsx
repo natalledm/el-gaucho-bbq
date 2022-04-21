@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
+import Header from "../components/Header";
 
 import { getDocument } from "../scripts/fireStoreDB";
 
@@ -17,7 +18,9 @@ export default function ProductPage() {
 
   return (
     <div>
-      <h1>{dish.name}</h1>
+      <div>
+        <Header bgImg={dish.image} title={dish.name} />
+      </div>
       {JSON.stringify(dish, null, 4)}
       <Link to={`/menu/${category}`}>Back to {category}</Link>
     </div>
