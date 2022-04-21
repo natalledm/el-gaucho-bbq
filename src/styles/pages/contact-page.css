@@ -1,0 +1,16 @@
+.contact-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 60rem;
+  max-width: 60%;
+  margin: 5% 20%;
+}
+
+.contact-content-container section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5rem;
+  justify-content: space-between;
+}
