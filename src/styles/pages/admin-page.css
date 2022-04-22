@@ -1,0 +1,37 @@
+.create-dish-form-container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  min-height: 30rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.create-dish-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.create-dish-form div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 260px;
+}
+
+.create-dish-form-container label {
+  padding-right: 1rem;
+}
+
+.create-dish-form-container input {
+  width: 150px;
+}
+
+.form-submit-button {
+  margin: 1rem 0;
+}
