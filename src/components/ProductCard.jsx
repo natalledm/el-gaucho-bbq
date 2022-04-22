@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import "../styles/components/product-card.css";
 
 export default function ProductCard({ dish, category }) {
-  console.log(dish);
   return (
     <div
       className="product-card"

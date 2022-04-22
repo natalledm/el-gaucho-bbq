@@ -1,0 +1,21 @@
+.product-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 40rem;
+  max-width: 60%;
+  margin: 5% 20%;
+  text-align: center;
+  gap: 3rem;
+}
+
+.product-content-container h3 {
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 600px) {
+  .product-content-container {
+    margin: 5% 35%;
+    padding-bottom: 3rem;
+  }
+}
