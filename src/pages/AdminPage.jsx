@@ -44,6 +44,14 @@ export default function AdminPage() {
     addDocument(`menu/${dishCategory}/content`, newDish);
   }
 
+  function resetForm() {
+    setName("");
+    setPrice(1);
+    setDescription("");
+    setImage("");
+    setIngredients("");
+  }
+
   return (
     <div className="create-dish-form-container">
       <h2>Create Dish</h2>
@@ -120,7 +128,19 @@ export default function AdminPage() {
             onChange={(event) => setImage(event.target.value)}
           />
         </div>
-        <button className="main-button form-submit-button">Submit</button>
+        <div>
+          <button
+            type="reset"
+            value="Clear the form"
+            onClick={resetForm}
+            className="main-button form-button"
+          >
+            Clear Form
+          </button>
+          <button className="main-button form-button" type="submit">
+            Submit
+          </button>
+        </div>
       </form>
     </div>
   );
