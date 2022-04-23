@@ -1,0 +1,27 @@
+{
+  "name": {
+    "label": "Dish name:",
+    "placeholder": "Ex: Sorbet",
+    "type": "text"
+  },
+  "description": {
+    "label": "Description:",
+    "placeholder": "Ex: Made of seasonal fruits",
+    "type": "text"
+  },
+  "ingredients": {
+    "label": "Ingredients:",
+    "placeholder": "Ex: Fruits",
+    "type": "text"
+  },
+  "price": {
+    "label": "Price:",
+    "placeholder": "Ex: 100",
+    "type": "number"
+  },
+  "image": {
+    "label": "Image url:",
+    "placeholder": "imagr.com/img",
+    "type": "text"
+  }
+}

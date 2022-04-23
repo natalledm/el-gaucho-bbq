@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
 import { addDocument, getCollection } from "../scripts/fireStoreDB";
+import InputField from "../components/InputField";
 
+import formInfo from "../data/inputFieldInfo.json";
 import "../styles/pages/admin-page.css";
 
 export default function AdminPage() {
   // aviso de funcionou
-  // apagar campos
+  // form validation
 
   const [categories, setCategories] = useState([]);
 
@@ -73,15 +75,7 @@ export default function AdminPage() {
           </select>
         </div>
         <div>
-          <label htmlFor="name">Name:</label>
-          <input
-            name="name"
-            id="name"
-            type="text"
-            placeholder="Dish"
-            value={name}
-            onChange={(event) => setName(event.target.value)}
-          />
+          <InputField fieldInfo={formInfo.name} state={[name, setName]} />
         </div>
         <div>
           <label htmlFor="description">Description:</label>
@@ -96,37 +90,16 @@ export default function AdminPage() {
           />
         </div>
         <div>
-          <label htmlFor="ingredients">Ingredients:</label>
-          <input
-            name="ingredients"
-            id="ingredients"
-            type="text"
-            placeholder="Ingredients"
-            value={ingredients}
-            onChange={(event) => setIngredients(event.target.value)}
+          <InputField
+            fieldInfo={formInfo.ingredients}
+            state={[ingredients, setIngredients]}
           />
         </div>
         <div>
-          <label htmlFor="price">Price:</label>
-          <input
-            name="price"
-            id="price"
-            type="number"
-            placeholder="Price"
-            value={price}
-            onChange={(event) => setPrice(event.target.value)}
-          />
+          <InputField fieldInfo={formInfo.price} state={[price, setPrice]} />
         </div>
         <div>
-          <label htmlFor="image">Image url:</label>
-          <input
-            name="image"
-            id="image"
-            type="text"
-            placeholder="Paste the image link"
-            value={image}
-            onChange={(event) => setImage(event.target.value)}
-          />
+          <InputField fieldInfo={formInfo.image} state={[image, setImage]} />
         </div>
         <div>
           <button
