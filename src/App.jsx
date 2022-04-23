@@ -15,6 +15,8 @@ import AdminPage from "./pages/AdminPage";
 import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage";
 import Navbar from "./components/Navbar";
+import CreateDishPage from "./pages/CreateDishPage";
+import DeleteDishPage from "./pages/DeleteDishPage";
 
 import "./styles/base.css";
 import Footer from "./components/Footer";
@@ -27,6 +29,8 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/*" element={<Navigate replace to="/" />} />
         <Route path="admin" element={<AdminPage />} />
+        <Route path="admin/create-dish" element={<CreateDishPage />} />
+        <Route path="admin/delete-dish" element={<DeleteDishPage />} />
         <Route path="contact" element={<ContactPage />} />
         <Route path="about" element={<AboutPage />} />
         <Route path="menu" element={<MenuPage />} />

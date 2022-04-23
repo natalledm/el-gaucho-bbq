@@ -1,5 +1,12 @@
 // packages
-import { collection, doc, getDoc, getDocs, addDoc } from "firebase/firestore";
+import {
+  collection,
+  doc,
+  getDoc,
+  getDocs,
+  addDoc,
+  deleteDoc,
+} from "firebase/firestore";
 
 // project file
 import { fireStoreDB } from "./connectToFirebase";
@@ -25,11 +32,18 @@ export async function getDocument(path, docId) {
   };
 }
 
-// Create
+// Create document
 
 export async function addDocument(path, data) {
   const docPath = collection(fireStoreDB, path);
   const newDocument = await addDoc(docPath, data);
 
   return newDocument.id;
+}
+
+// Delete document
+
+export async function deleteDocument(path, docId) {
+  const document = doc(fireStoreDB, path, docId);
+  await deleteDoc(document);
 }

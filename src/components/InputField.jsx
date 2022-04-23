@@ -14,6 +14,7 @@ export default function InputField({ fieldInfo, state }) {
         value={value}
         onChange={(event) => setValue(event.target.value)}
         className="input-field"
+        required={true}
       />
     </label>
   );
