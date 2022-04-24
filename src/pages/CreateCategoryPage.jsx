@@ -39,6 +39,7 @@ export default function CreateCategoryPage() {
     });
 
     if (maybeHasCategory !== undefined) {
+      alert("This category already exists!");
       console.error("This category already exists!");
       setIsSuccessful(false);
       resetForm();
