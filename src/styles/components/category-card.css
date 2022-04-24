@@ -3,7 +3,6 @@
   height: 90px;
   color: var(--soft-white);
   text-align: center;
-  cursor: pointer;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -14,9 +13,11 @@
 }
 
 .card-item a {
-  position: relative;
   text-align: center;
   font-weight: bold;
+}
+.card-item a:hover {
+  text-decoration: underline;
 }
 
 @media (min-width: 600px) {

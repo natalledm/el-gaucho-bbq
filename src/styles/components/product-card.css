@@ -3,7 +3,6 @@
   height: 120px;
   color: var(--soft-white);
   text-align: center;
-  cursor: pointer;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -16,6 +15,10 @@
 .product-card a {
   text-align: center;
   font-weight: bold;
+}
+
+.product-card a:hover {
+  text-decoration: underline;
 }
 
 @media (min-width: 600px) {
