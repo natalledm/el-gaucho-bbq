@@ -17,10 +17,11 @@ import AboutPage from "./pages/AboutPage";
 import Navbar from "./components/Navbar";
 import CreateDishPage from "./pages/CreateDishPage";
 import DeleteDishPage from "./pages/DeleteDishPage";
+import CreateCategoryPage from "./pages/CreateCategoryPage";
+import DeleteCategoryPage from "./pages/DeleteCategoryPage";
 
 import "./styles/base.css";
 import Footer from "./components/Footer";
-import CreateCategoryPage from "./pages/CreateCategoryPage";
 
 export default function App() {
   return (
@@ -33,6 +34,7 @@ export default function App() {
         <Route path="admin/create-dish" element={<CreateDishPage />} />
         <Route path="admin/delete-dish" element={<DeleteDishPage />} />
         <Route path="admin/create-category" element={<CreateCategoryPage />} />
+        <Route path="admin/delete-category" element={<DeleteCategoryPage />} />
         <Route path="contact" element={<ContactPage />} />
         <Route path="about" element={<AboutPage />} />
         <Route path="menu" element={<MenuPage />} />

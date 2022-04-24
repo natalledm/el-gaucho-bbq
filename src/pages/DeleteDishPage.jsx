@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { getCollection, deleteDocument } from "../scripts/fireStoreDB";
+import "../styles/pages/delete-dish-page.css";
 
 import ProductCard from "../components/ProductCard";
 
@@ -73,6 +75,9 @@ export default function DeleteDishPage() {
           </li>
         ))}
       </ul>
+      <Link to={"/admin"} className="main-button button-back-admin">
+        Back to Admin Page
+      </Link>
     </div>
   );
 }

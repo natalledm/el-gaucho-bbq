@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { addDocument, getCollection } from "../scripts/fireStoreDB";
 import InputField from "../components/InputField";
 
@@ -123,6 +124,11 @@ export default function CreateDishPage() {
         </div>
       </form>
       {isSuccessful ? <p>Dish created!</p> : null}
+      <div>
+        <Link to={"/admin"} className="main-button button-back-admin">
+          Back to Admin Page
+        </Link>
+      </div>
     </div>
   );
 }

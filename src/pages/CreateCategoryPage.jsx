@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import CategoryCard from "../components/CategoryCard";
 import InputField from "../components/InputField";
 import fieldInfo from "../data/inputCategoryFieldInfo.json";
@@ -110,6 +111,11 @@ export default function CreateCategoryPage() {
         </form>
       </div>
       {isSuccessful ? <p>Category created!</p> : null}
+      <div>
+        <Link to={"/admin"} className="main-button button-back-admin">
+          Back to Admin Page
+        </Link>
+      </div>
     </div>
   );
 }

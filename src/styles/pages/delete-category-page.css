@@ -1,0 +1,24 @@
+.delete-category-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete-category-title-container {
+  padding: 3rem 0;
+  text-align: center;
+  max-width: 300px;
+}
+
+.category-delete-item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.category-delete-item-container button {
+  margin-bottom: 1rem;
+}
