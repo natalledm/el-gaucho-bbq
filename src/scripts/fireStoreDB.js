@@ -6,6 +6,7 @@ import {
   getDocs,
   addDoc,
   deleteDoc,
+  setDoc,
 } from "firebase/firestore";
 
 // project file
@@ -32,13 +33,19 @@ export async function getDocument(path, docId) {
   };
 }
 
-// Create document
+// Create document with firestore generated id
 
 export async function addDocument(path, data) {
   const docPath = collection(fireStoreDB, path);
   const newDocument = await addDoc(docPath, data);
 
   return newDocument.id;
+}
+
+// Create document with its id
+export async function addDocumentWithId(path, data, customId) {
+  const docLocation = collection(fireStoreDB, path);
+  await setDoc(doc(docLocation, customId), data);
 }
 
 // Delete document

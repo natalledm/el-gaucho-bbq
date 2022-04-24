@@ -20,6 +20,7 @@ import DeleteDishPage from "./pages/DeleteDishPage";
 
 import "./styles/base.css";
 import Footer from "./components/Footer";
+import CreateCategoryPage from "./pages/CreateCategoryPage";
 
 export default function App() {
   return (
@@ -31,6 +32,7 @@ export default function App() {
         <Route path="admin" element={<AdminPage />} />
         <Route path="admin/create-dish" element={<CreateDishPage />} />
         <Route path="admin/delete-dish" element={<DeleteDishPage />} />
+        <Route path="admin/create-category" element={<CreateCategoryPage />} />
         <Route path="contact" element={<ContactPage />} />
         <Route path="about" element={<AboutPage />} />
         <Route path="menu" element={<MenuPage />} />

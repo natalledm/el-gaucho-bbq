@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import { addDocument, getCollection } from "../scripts/fireStoreDB";
 import InputField from "../components/InputField";
 
-import formInfo from "../data/inputFieldInfo.json";
-import "../styles/pages/admin-page.css";
+import formInfo from "../data/inputDishFieldInfo.json";
+import "../styles/pages/create-dish-page.css";
 
 export default function CreateDishPage() {
   const [categories, setCategories] = useState([]);
