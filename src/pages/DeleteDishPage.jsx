@@ -47,7 +47,9 @@ export default function DeleteDishPage() {
   }
 
   return (
-    <div className="category-page-content-container">
+    <div className="delete-dish-page-container">
+      <h2 className="delete-title">Delete dish</h2>
+      <h3>Choose a category to see the dishes:</h3>
       <div>
         <label htmlFor="select-categories">Categories:</label>
         <select
@@ -70,7 +72,12 @@ export default function DeleteDishPage() {
           <li key={dish.id}>
             <div>
               <ProductCard dish={dish} category={dishCategory} />
-              <button onClick={() => onDelete(dish.id)}>Delete</button>
+              <button
+                onClick={() => onDelete(dish.id)}
+                className="main-button delete-dish-button"
+              >
+                Delete
+              </button>
             </div>
           </li>
         ))}
