@@ -1,6 +1,6 @@
 .product-card {
   width: 150px;
-  height: 90px;
+  height: 120px;
   color: var(--soft-white);
   text-align: center;
   cursor: pointer;
@@ -8,12 +8,13 @@
   background-size: cover;
   background-position: center;
   box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .product-card a {
-  position: relative;
   text-align: center;
-  line-height: 90px;
   font-weight: bold;
 }
 
@@ -21,9 +22,5 @@
   .product-card {
     width: 280px;
     height: 150px;
-  }
-
-  .product-card a {
-    line-height: 150px;
   }
 }
