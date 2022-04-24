@@ -1,0 +1,12 @@
+.delete-dish-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.delete-dish-button {
+  margin: 1rem;
+}
