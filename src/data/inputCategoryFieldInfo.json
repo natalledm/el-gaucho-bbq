@@ -1,0 +1,12 @@
+{
+  "id": {
+    "label": "Category name: ",
+    "placeholder": "Ex: drinks",
+    "type": "text"
+  },
+  "imageUrl": {
+    "label": "Image url: ",
+    "placeholder": "Enter image url path",
+    "type": "text"
+  }
+}

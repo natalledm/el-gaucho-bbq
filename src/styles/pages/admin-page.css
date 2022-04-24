@@ -1,0 +1,25 @@
+.admin-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.admin-page-container h1,
+h2 {
+  margin: 3rem 1rem;
+}
+
+.row-container {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem;
+  text-align: center;
+  align-items: baseline;
+}
+
+.row-container a {
+  line-height: normal;
+  padding: 2rem;
+}

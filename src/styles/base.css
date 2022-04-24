@@ -85,6 +85,16 @@ ol {
   background-color: var(--hover-dark-red);
 }
 
+.button-back-admin {
+  margin: 5rem;
+  padding: 1rem;
+  background-color: var(--dark-coal);
+}
+
+.button-back-admin:hover {
+  text-decoration: underline;
+}
+
 /* General layout organization */
 
 .flex-column-center {
