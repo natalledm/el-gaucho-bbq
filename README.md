@@ -5,7 +5,7 @@ The data is created dynamically through a admin page connected to the firestore 
 
 It is a **mobile first page**, so please check it out first with your mobile or a mobile screen option in your browser.
 
-You can visit the page [here](google.com) to see the working site.
+You can visit the page [here](https://el-gaucho-bbq.web.app/) to see the working site.
 
 ## Project Steps
 
