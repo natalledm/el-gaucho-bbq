@@ -124,11 +124,9 @@ export default function CreateDishPage() {
         </div>
       </form>
       {isSuccessful ? <p>Dish created!</p> : null}
-      <div>
-        <Link to={"/admin"} className="main-button button-back-admin">
-          Back to Admin Page
-        </Link>
-      </div>
+      <Link to={"/admin"} className="main-button button-back-admin">
+        Back to Admin Page
+      </Link>
     </div>
   );
 }

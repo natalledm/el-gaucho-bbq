@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
+import "../styles/pages/admin-page.css";
 
 export default function AdminPage() {
   return (
-    <div>
+    <div className="admin-page-container">
+      <h1>Welcome to the Admin Page</h1>
       <h2>Choose an option:</h2>
-      <div>
-        <h3>Create</h3>
+      <div className="row-container">
+        <h3>Create:</h3>
         <Link to={"create-dish"} className="main-button">
           Create a dish
         </Link>
@@ -13,8 +15,8 @@ export default function AdminPage() {
           Create category
         </Link>
       </div>
-      <div>
-        <h3>Delete</h3>
+      <div className="row-container">
+        <h3>Delete:</h3>
         <Link to={"delete-dish"} className="main-button">
           Delete dish
         </Link>

@@ -111,11 +111,9 @@ export default function CreateCategoryPage() {
         </form>
       </div>
       {isSuccessful ? <p>Category created!</p> : null}
-      <div>
-        <Link to={"/admin"} className="main-button button-back-admin">
-          Back to Admin Page
-        </Link>
-      </div>
+      <Link to={"/admin"} className="main-button button-back-admin">
+        Back to Admin Page
+      </Link>
     </div>
   );
 }
