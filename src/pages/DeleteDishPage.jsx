@@ -5,6 +5,7 @@ import "../styles/pages/delete-dish-page.css";
 
 import ProductCard from "../components/ProductCard";
 
+// This component is too long -1
 export default function DeleteDishPage() {
   const [categories, setCategories] = useState([]);
   const [dishes, setDishes] = useState([]);

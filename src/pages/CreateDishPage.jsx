@@ -6,6 +6,7 @@ import InputField from "../components/InputField";
 import formInfo from "../data/inputDishFieldInfo.json";
 import "../styles/pages/create-dish-page.css";
 
+// This component is too long -1
 export default function CreateDishPage() {
   const [categories, setCategories] = useState([]);
 

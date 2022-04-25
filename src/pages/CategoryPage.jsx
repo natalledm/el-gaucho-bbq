@@ -11,7 +11,6 @@ export default function CategoryPage() {
   const { category } = useParams();
 
   const [dishes, setDishes] = useState([]);
-
   const [categoryData, setCategoryData] = useState({});
 
   // get dishes

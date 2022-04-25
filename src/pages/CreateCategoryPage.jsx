@@ -7,6 +7,7 @@ import "../styles/pages/create-category-page.css";
 
 import { addDocumentWithId, getCollection } from "../scripts/fireStoreDB";
 
+// This component is too long -1
 export default function CreateCategoryPage() {
   const [categories, setCategories] = useState([]);
 
@@ -76,6 +77,7 @@ export default function CreateCategoryPage() {
       </div>
       <div className="menu-content-container">
         <ul className="category-container">
+          {/* Don't do loops inside the JSX it make it hard to maintain -1 */}
           {categories.map((category) => (
             <li key={category.id}>
               <CategoryCard category={category} />
