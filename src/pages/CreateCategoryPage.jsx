@@ -7,7 +7,7 @@ import "../styles/pages/create-category-page.css";
 
 import { addDocumentWithId, getCollection } from "../scripts/fireStoreDB";
 
-// This component is too long -1
+// This component is too long -1 for having just the create process witouth delete or update
 export default function CreateCategoryPage() {
   const [categories, setCategories] = useState([]);
 
